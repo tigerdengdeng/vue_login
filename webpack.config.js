@@ -28,10 +28,17 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader',
+        // options:{
+        //   plugins:['syntax-dynamic-import']
+        // },
         exclude: /node_modules/
       },
       {
-        test: /\.(png|jpg|gif|svg)$/,
+        test: /\.scss$/,
+        loaders: ['style', 'css', 'sass']
+      },
+      {
+        test: /\.(png|jpg|gif|svg|eot|woff|ttf|svg|woff2)$/,
         loader: 'file-loader',
         options: {
           name: '[name].[ext]?[hash]'
