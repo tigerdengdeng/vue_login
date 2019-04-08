@@ -13,7 +13,7 @@ Vue.use(Router);
 const Login = () => import(/* webpackChunkName: "group-foo" */ '../views/login/login.vue') //異步加載
 const Index = () => import(/* webpackChunkName: "group-foo" */ '../views/Home/Index.vue')
 
-const Userlist = () => import(/* webpackChunkName: "group-foo" */ '../views/user/userlist.vue') //異步加載
+const  Userlist = () => import(/* webpackChunkName: "group-foo" */ '../views/user/userlist.vue') //異步加載
 const Useradd = () => import(/* webpackChunkName: "group-foo" */ '../views/user/useradd.vue')
 
 //配置路由
